@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+
+  background-color: black;
+}
+
+/*----------
+  Navbar
+-----------*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li > a{
+  display: block;
+  position: relative;
+  padding: 20px 15px 10px 15px;
+  text-decoration: none;
+
+  color: white;
+}
+
+/* --------------
+  Estos siguientes dos son para coloar una linea que se dibuja desde el centro del elemento cuando se le hace hover
+--------------- */
+
+nav ul li .link::before{
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+
+  background-color: white;
+}
+
+nav ul li .link:hover::before{
+  transform: scaleX(1);
+}
+/* --------------------------------- */
+
+nav .more{
+  display: none;
+}
+
+/* Menu desplegable en More */
+nav .menu{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  background-color: white;
+}
+
+nav .menu a{
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+nav .menu a:hover{
+  background-color: black;
+  color: white;
+}
+/* ---------------------------- */
+
+nav .mobile{
+  display: none;
+}
+
+@media screen and (max-width: 1132px){
+  nav .link-hide{
+    display: none;
+  }
+
+  nav .more {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 640px){
+  nav ul{
+    display: none;
+  }
+
+  nav .mobile{
+    display: block;
+  }
+}
