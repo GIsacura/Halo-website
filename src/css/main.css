@@ -97,7 +97,7 @@ nav .mobile{
   width: 100%;
 }
 
-nav .mobile header{
+nav .mobile .header{
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -106,14 +106,14 @@ nav .mobile header{
   background-color: black;
 }
 
-nav .mobile header a{
+nav .mobile .header a{
   display: inline-flex;
   color: white;
   text-decoration: none;
   padding: 5px;
 }
 
-nav .mobile header #bmenu{
+nav .mobile .header #bmenu{
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -126,6 +126,8 @@ nav .mobile .links{
   flex-direction: column;
   position: relative;
   z-index: 200;
+
+  background-color: black;
 }
 
 nav .mobile .links a{
@@ -142,6 +144,17 @@ nav .mobile .links a:hover{
   background-color: white;
 }
 
+/*----------
+  Header
+-----------*/
+
+header{
+  background-image: url('../images/halo-infinite-cover-darkmode.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
 @media screen and (max-width: 1132px){
   nav .link-hide{
     display: none;
@@ -149,6 +162,10 @@ nav .mobile .links a:hover{
 
   nav .more {
     display: flex;
+  }
+
+  header{
+    height: 70vh;
   }
 }
 
@@ -164,5 +181,10 @@ nav .mobile .links a:hover{
 
   nav .mobile{
     display: block;
+  }
+
+  header{
+    background-position: center 40px;
+    height: 30vh;
   }
 }
