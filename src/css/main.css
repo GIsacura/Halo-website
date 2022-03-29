@@ -430,6 +430,27 @@ header{
   font-size: 20px;
 }
 
+/*----------
+  Get the game
+-----------*/
+
+#get-the-game .green-button{
+  text-transform: uppercase;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px 40px;
+  background-color: greenyellow;
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#get-the-game .green-button:hover{
+  background-color: rgb(138, 207, 33);
+}
+
 @media screen and (max-width: 1519px){
   #multi-player .info{
     color: white;
