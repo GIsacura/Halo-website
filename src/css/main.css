@@ -431,8 +431,39 @@ header{
 }
 
 /*----------
-  Get the game
+  Get the game - Store
 -----------*/
+
+#get-the-game{
+  text-align: center;
+  padding: 50px 0;
+
+  color: white;
+}
+
+#get-the-game h2{
+  font-size: 3.3rem;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: white;
+}
+
+#get-the-game h2::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: -40px;
+  left: 0;
+
+  transform: scale(0.4) skewY(-20deg) rotate(20deg); /* Asi se hace la linea debajo del el Halo Infinite */
+
+  background-color: greenyellow;
+}
 
 #get-the-game .green-button{
   text-transform: uppercase;
@@ -449,6 +480,32 @@ header{
 
 #get-the-game .green-button:hover{
   background-color: rgb(138, 207, 33);
+}
+
+#get-the-game .item-store{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#get-the-game .item-store .left{
+  padding: 0 20px;
+  width: 100%;
+}
+
+#get-the-game .item-store .left img{
+  width: 500px;
+}
+
+#get-the-game .item-store .right{
+  text-align: left;
+  width: 80%;
+}
+
+#get-the-game .item-store .right h3{
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 @media screen and (max-width: 1519px){
@@ -491,6 +548,19 @@ header{
 
   #multi-player .info{
     margin: 0 auto;
+  }
+
+  #get-the-game .item-store{
+    width: 100%;
+    padding: 20px;
+  }
+
+  #get-the-game .item-store .left img{
+    width: 350px;
+  }
+
+  #get-the-game .item-store .right{
+    width: 100%;
   }
 }
 
@@ -541,6 +611,22 @@ header{
 
   #multi-player .info p{
     font-size: 16px;
+  }
+
+  #get-the-game .item-store{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #get-the-game .item-store .left img{
+    width: 200px;
+  }
+
+  #get-the-game .item-store .right{
+    text-align: center;
+    width: 100%;
   }
 
 }
