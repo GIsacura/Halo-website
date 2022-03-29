@@ -508,10 +508,24 @@ header{
   margin: 0;
 }
 
+footer{
+  height: 800px;
+
+  background-image: url("../images/master-chief-darkmode.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media screen and (max-width: 1519px){
   #multi-player .info{
     color: white;
     background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media screen and (max-width: 1440px){
+  footer{
+    background-position: center center;
   }
 }
 
@@ -561,6 +575,10 @@ header{
 
   #get-the-game .item-store .right{
     width: 100%;
+  }
+
+  footer{
+    height: 600px;
   }
 }
 
@@ -627,6 +645,11 @@ header{
   #get-the-game .item-store .right{
     text-align: center;
     width: 100%;
+  }
+
+  footer{
+    height: 400px;
+    background-position: center center;
   }
 
 }
