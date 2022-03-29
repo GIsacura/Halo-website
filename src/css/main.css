@@ -326,12 +326,16 @@ header{
   border: solid 1px #00c3ff;
 }
 
+#videos #slider #main-videos-container{
+  width: 100%;
+  overflow: auto;
+}
+
 #videos #slider #videos-container{
   display: flex;
   gap: 10px;
-  width: 100%;
-  overflow: auto;
-  justify-content: center;
+  width: min-content;
+  margin: 0 auto;
 }
 
 #videos #slider #videos-container .item{
