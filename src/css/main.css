@@ -396,7 +396,7 @@ header{
 }
 
 #multi-player h2{
-  font-size: 5rem;
+  font-size: 3.3rem;
   position: relative;
   display: inline-block;
   padding: 0;
@@ -422,12 +422,20 @@ header{
   padding: 40px;
   width: 600px;
   margin-right: 50px;
+  transition: background-color 0.3s ease;
 
 }
 
 #multi-player .info p{
   font-size: 20px;
-}]
+}
+
+@media screen and (max-width: 1519px){
+  #multi-player .info{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
 
 @media screen and (max-width: 1199px){
   nav .link-hide{
@@ -454,6 +462,14 @@ header{
 
   #slider #current iframe{
     height: 500px;
+  }
+
+  #multi-player{
+    background-position: center left;
+  }
+
+  #multi-player .info{
+    margin: 0 auto;
   }
 }
 
@@ -486,6 +502,24 @@ header{
 
   #slider #videos-container{
     display: none !important;
+  }
+
+  #multi-player{
+    background-position: -50px 0px;
+  }
+
+
+  #multi-player .info{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #multi-player .info h2{
+    font-size: 3rem;
+  }
+
+  #multi-player .info p{
+    font-size: 16px;
   }
 
 }
