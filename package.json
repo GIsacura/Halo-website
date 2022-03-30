@@ -4,17 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GIsacura/Halo-website.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Gustavo Isacura",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GIsacura/Halo-website/issues"
   },
-  "homepage": "https://github.com/GIsacura/Halo-website#readme"
+  "homepage": "https://github.com/GIsacura/Halo-website#readme",
+  "dependencies": {
+    "vite": "^2.8.6"
+  }
 }
