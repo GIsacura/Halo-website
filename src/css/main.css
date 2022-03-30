@@ -199,7 +199,7 @@ header{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.green-button{
+#banner .green-button{
   text-transform: uppercase;
   border: 0;
   display: inline-flex;
@@ -212,11 +212,11 @@ header{
   text-decoration: none;
 }
 
-.green-button:hover{
+#banner .green-button:hover{
   background-color: rgb(138, 207, 33);
 }
 
-.green-link{
+#banner .green-link{
   text-transform: uppercase;
   position: relative;
   border: 0;
@@ -229,7 +229,7 @@ header{
   text-decoration: none;
 }
 
-.green-link::before{
+#banner .green-link::before{
   content: "";
   display: block;
   position: absolute;
@@ -242,7 +242,7 @@ header{
   transition: transform 0.3s ease;
 }
 
-.green-link:hover::before{
+#banner .green-link:hover::before{
   transform: scaleX(1);
 }
 
